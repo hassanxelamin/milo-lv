@@ -21,6 +21,14 @@ jobs:
 
       - uses: borales/actions-yarn@v3.0.0
         with:
+          cmd: eslint src/ --ext .tsx --fix
+
+      - uses: borales/actions-yarn@v3.0.0
+        with:
+          cmd: eslint src/ --ext .ts --fix
+          
+      - uses: borales/actions-yarn@v3.0.0
+        with:
           cmd: eslint src/ --ext .tsx
 
       - uses: borales/actions-yarn@v3.0.0
